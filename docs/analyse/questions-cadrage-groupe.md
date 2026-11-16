@@ -1,14 +1,14 @@
 # Référentiel Complet de Questions Maturées (Cadrage Professeur, Commanditaire SDMIS 69 & Brainstorming Équipe)
 
-> [!IMPORTANT]
-> Ce document conserve **100 % des questions précédentes mot pour mot** et **élargit le spectre d'investigation à 7 grands axes** pour couvrir l'ensemble de l'écosystème :
-> 1. **Périmètre Métier, Causes Naturelles vs Humaines & Typologie des Sinistres**
-> 2. **Déconstruction Scientifique de l'Indice « Météo des Forêts » (IFM) & Granularité**
-> 3. **Nature, Écologie Forestière, Biodiversité & Bilan Carbone**
-> 4. **Modèle Économique, Financier, Contrainte Humaine (SPP/SPV) & « Dispositif Renforcé »**
-> 5. **Gouvernance des Données (0-Party, 1st-Party, 2nd-Party, 3rd-Party) & Sources Scientifiques**
-> 6. **Systèmes d'Information Existants du SDMIS, Contraintes Administratives & Légales (SDACR, OLD, DFCI)**
-> 7. **Projection vers la Solution Finale (Architecture Cible, Aide à la Décision & Adoption Terrain)**
+## Sommaire des Axes d'Analyse
+
+1. **Périmètre Métier, Causes Naturelles vs Humaines & Typologie des Sinistres**
+2. **Déconstruction Scientifique de l'Indice « Météo des Forêts » (IFM) & Granularité**
+3. **Nature, Écologie Forestière, Biodiversité & Bilan Carbone**
+4. **Modèle Économique, Financier, Contrainte Humaine (SPP/SPV) & « Dispositif Renforcé »**
+5. **Gouvernance des Données (0-Party, 1st-Party, 2nd-Party, 3rd-Party) & Sources Scientifiques**
+6. **Systèmes d'Information Existants du SDMIS, Contraintes Administratives & Légales (SDACR, OLD, DFCI)**
+7. **Projection vers la Solution Finale (Architecture Cible, Aide à la Décision & Adoption Terrain)**
 
 ---
 
