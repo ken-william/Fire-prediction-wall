@@ -45,6 +45,8 @@ Le dépôt est structuré pour organiser les travaux collectifs de l'équipe :
 ├── docs/
 │   ├── analyse/
 │   │   └── questions-cadrage-groupe.md # Référentiel complet des questions de cadrage du groupe (7 axes)
+│   ├── sources/
+│   │   └── fiches-sources-aura.md      # Fiches descriptives des sources et matrice Questions x Sources AURA
 │   ├── glossaire/                      # Glossaire partagé des termes métiers et techniques
 │   └── decisions/                      # Journal de bord des choix d'architecture et de gouvernance
 └── data/                               # Dossier des jeux de données (non versionné sur git)
