@@ -19,33 +19,33 @@
 
 ---
 
-## Gouvernance & Répartition des Rôles
+## Gouvernance & Répartition des Rôles (Groupe 8)
 
-Conformément aux exigences méthodologiques du titre RNCP, la gouvernance de l'équipe est organisée autour de 4 domaines de responsabilité :
+Conformément à la gouvernance d'équipe validée par l'encadrement pédagogique, les responsabilités sont attribuées selon les domaines d'expertise :
 
-| Rôle | Responsable | Périmètre de Responsabilité |
-| :--- | :--- | :--- |
-| **Chef·fe de projet** | *À compléter par le groupe* | Administration du dépôt, gestion des tickets / issues, planification des checkpoints et tenue du journal des décisions. *(Assure également le rôle Responsable sources en configuration 3 personnes)*. |
-| **Responsable sources** | *À compléter par le groupe* | Inventaire des données (1P, 2P, 3P), fiches d'identité des sources, construction de la matrice « Questions $\times$ Sources ». |
-| **Responsable qualité & conformité** | *À compléter par le groupe* | Définition des règles de qualité des données, tests de non-régression, conformité légale et RGPD / données sensibles. |
-| **Responsable pipeline & modèle** | *À compléter par le groupe* | Architecture d'ingestion (ETL/ELT), consolidation des données multi-sources, modélisation de l'entrepôt et algorithmes d'aide à la décision. |
-
-> *Note : Tout changement de rôle en cours de projet sera consigné et justifié dans le dossier `docs/decisions/`.*
+| Responsable | Rôle Officiel | Missions Clés | Livrables Engagés |
+| :--- | :--- | :--- | :--- |
+| **Théo**<br>*(Théophane KENGNI)*<br>`t_kengni@hetic.eu` | **Chef de projet** | Pilote le projet et veille au respect des échéances. Crée et organise le dépôt GitHub, attribue les tickets, gère les branches et PRs, organise les checkpoints et tient le journal des décisions. Coordonne la préparation de la restitution devant la direction du SDIS 77. | `README.md`, tableau des rôles, backlog GitHub, planning, journal des décisions (`docs/decisions/`), consolidation de la présentation finale. |
+| **Linda**<br>*(Linda MAKAMTA)*<br>`l_makamtanjossu@hetic.eu` | **Responsable Data Analytics, KPIs & BI** | Définit les questions auxquelles les données doivent répondre et construit l'arbre de KPIs. Analyse les incendies par année, commune et niveau de danger météo, puis réalise les analyses comparatives Seine-et-Marne / Île-de-France / France. Conçoit le dashboard Power BI et traduit les résultats en recommandations opérationnelles. | Catalogue de KPIs, fiches indicateurs, calculs analytiques, maquettes puis rapport Power BI (`.pbix`), synthèse des recommandations. |
+| **Mike**<br>*(Mikael NDEDI)* | **Responsable Data Engineering & Modélisation** | Développe le pipeline reproductible qui alimente les analyses. Charge et harmonise les données, construit les règles de jointure, modélise les tables de faits et dimensions, et produit un diagramme du modèle cible. Documente les transformations réalisées pour chaque champ. | Scripts Python/SQL, pipeline ETL médaillon, schéma UML ou équivalent, tables consolidées Parquet, dictionnaire technique et tableau de data lineage. |
+| **Harald**<br>*(Harald MAFORIKAN)*<br>`h_maforikan@hetic.eu` | **Responsable Data Sources, Qualité & Conformité** | Identifie et documente les jeux de données nécessaires, établit la matrice questions × sources et vérifie la fiabilité des données. Définit les contrôles de qualité, examine les problèmes d'alignement entre sources et documente le choix des données lorsqu'il existe des doublons ou valeurs contradictoires. Traite les enjeux de conformité. | Fiches sources, glossaire, matrice questions × sources, rapport qualité, règles de validation, annexes des sources. |
 
 ---
 
-## Architecture du Dépôt
+## Architecture Cible du Dépôt
 
-Le dépôt est structuré pour organiser les travaux collectifs de l'équipe :
+Le dépôt est structuré pour organiser l'ensemble des livrables de l'équipe (alimenté par les branches thématiques dédiées) :
 
 ```text
 .
-├── README.md                           # Présentation du projet, cadrage et gouvernance
+├── README.md                           # Présentation du projet, cadrage et gouvernance d'équipe
 ├── .gitignore                          # Règles d'exclusion des données volumineuses et secrets
-├── docs/                               # Livrables et documentation (développés dans les branches de travail)
-│   ├── analyse/                        # Analyse de la commande et questions de cadrage
-│   ├── sources/                        # Fiches descriptives des sources et matrice de décision
+├── docs/                               # Livrables et documentation d'équipe (fusionnés via PR)
+│   ├── analyse/                        # [PR #3] Analyse de la commande, questions de cadrage et livrable Atelier 1
+│   ├── sources/                        # [PR #4] Fiches descriptives des sources et matrice Questions × Sources (77)
+│   ├── modelisation/                   # Diagramme UML StarUML, spécification données cibles et annexes
+│   ├── dataviz/                        # [Nouveau] Maquettes UX, spécifications DAX et rapports Power BI
 │   ├── glossaire/                      # Glossaire partagé des termes métiers et techniques
 │   └── decisions/                      # Journal de bord des choix d'architecture et de gouvernance
-└── data/                               # Jeux de données (non versionnés sur git)
+└── data/                               # Jeux de données bruts et nettoyés (non versionnés sur git)
 ```
