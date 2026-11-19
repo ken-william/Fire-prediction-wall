@@ -1,21 +1,21 @@
-# Feux de Forêt — Auvergne-Rhône-Alpes (Saison Feux 2027)
+# Feux de Forêt — Seine-et-Marne (Saison Feux 2027)
 
 > **Projet de Modélisation et Pipeline de Données — Stratégie Business Data-Driven**  
 > **Master MD5 (2026 / 2027) — Hétic**  
-> **Commanditaire** : Direction du SDMIS 69 (Service Départemental-Métropolitain d'Incendie et de Secours du Rhône)  
-> **Région étudiée** : Auvergne-Rhône-Alpes (Focus départemental : Rhône - 69)  
+> **Commanditaire** : Direction du SDIS 77 (Service Départemental d'Incendie et de Secours de Seine-et-Marne)  
+> **Région étudiée** : Île-de-France (Focus départemental : Seine-et-Marne - 77)  
 > **Date cible de rendu** : 11 décembre 2026  
 
 ---
 
 ## Présentation du Projet
 
-À la suite des saisons feux intenses et de la canicule de 2026, la Direction du **SDMIS 69** prépare la saison estivale 2027 en sollicitant une analyse data-driven approfondie pour répondre à deux arbitrages stratégiques majeurs :
+À la suite des saisons feux intenses et des épisodes de sécheresse estivale récents en Île-de-France, la Direction du **SDIS 77** prépare la saison estivale 2027 en sollicitant une analyse data-driven approfondie pour répondre à deux arbitrages stratégiques majeurs :
 
-1. **Optimisation spatiale des moyens** : *Où concentrer les moyens humains et financiers pour lutter au mieux contre les départs de feux ?* (zones périurbaines lyonnaises, massifs du Beaujolais et des Monts du Lyonnais, interfaces habitat-forêt).
+1. **Optimisation spatiale des moyens** : *Où concentrer les moyens humains et financiers pour lutter au mieux contre les départs de feux ?* (massif forestier de Fontainebleau, forêts de Crécy et de Villefermoy, zones agricoles céréalières de la Brie exposées aux feux de chaumes, interfaces habitat-forêt périurbaines franciliennes).
 2. **Calibrage du seuil de déclenchement** : *À partir de quel niveau de la Météo des forêts déclencher le dispositif renforcé (patrouilles préventives, guet, pré-positionnement) ?*
    - Résoudre le paradoxe du seuil actuel : remédier aux **faux positifs** coûteux (sur-mobilisation sans départ de feu) et aux **faux négatifs** dangereux (feux réels déclenchés par indice bas).
-   - Comparer le comportement de l'indice dans le Rhône avec les départements voisins d'Auvergne-Rhône-Alpes (Ardèche, Drôme, Isère, etc.) et le reste du territoire national.
+   - Comparer le comportement de l'indice en Seine-et-Marne avec les départements voisins d'Île-de-France (Essonne, Yvelines, Val-d'Oise, etc.) et le reste du territoire national.
 
 ---
 
@@ -46,7 +46,7 @@ Le dépôt est structuré pour organiser les travaux collectifs de l'équipe :
 │   ├── analyse/
 │   │   └── questions-cadrage-groupe.md # Référentiel complet des questions de cadrage du groupe (7 axes)
 │   ├── sources/
-│   │   └── fiches-sources-aura.md      # Fiches descriptives des sources et matrice Questions x Sources AURA
+│   │   └── fiches-sources-seine-et-marne.md # Fiches descriptives des sources et matrice Questions x Sources (77)
 │   ├── glossaire/                      # Glossaire partagé des termes métiers et techniques
 │   └── decisions/                      # Journal de bord des choix d'architecture et de gouvernance
 └── data/                               # Dossier des jeux de données (non versionné sur git)
